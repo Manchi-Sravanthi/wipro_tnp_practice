@@ -1,0 +1,35 @@
+package logicbuildinghrday4today10;
+
+public class Q18 {
+	public static int nonRepeatedDigitsCount(int input1)
+    {
+        int[] count = new int[10];
+
+        while(input1 > 0)
+        {
+            int digit = input1 % 10;
+            count[digit]++;
+            input1 = input1 / 10;
+        }
+
+        int ans = 0;
+
+        for(int i = 0; i < 10; i++)
+        {
+            if(count[i] == 1)
+            {
+                ans++;
+            }
+        }
+
+        return ans;
+    }
+
+    public static void main(String[] args)
+    {
+        System.out.println(nonRepeatedDigitsCount(292));   // 1
+        System.out.println(nonRepeatedDigitsCount(1015));  // 2
+        System.out.println(nonRepeatedDigitsCount(108));   // 3
+        System.out.println(nonRepeatedDigitsCount(22));    // 0
+    }
+}
