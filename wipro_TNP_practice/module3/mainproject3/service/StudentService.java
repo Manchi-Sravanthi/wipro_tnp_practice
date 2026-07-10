@@ -1,0 +1,50 @@
+package abstraction.miniproject3.service;
+import abstraction.miniproject3.bean.Student;
+
+public class StudentService {
+
+    public int findNumberOfNullMarksArray(Student[] data) {
+
+        int count = 0;
+
+        if (data != null) {
+            for (Student s : data) {
+                if (s != null && s.getMarks() == null) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    public int findNumberOfNullName(Student[] data) {
+
+        int count = 0;
+
+        if (data != null) {
+            for (Student s : data) {
+                if (s != null && s.getName() == null) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    public int findNumberOfNullObjects(Student[] data) {
+
+        int count = 0;
+
+        if (data != null) {
+            for (Student s : data) {
+                if (s == null) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+}
