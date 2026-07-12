@@ -11,8 +11,6 @@ public class EmployeeManagement {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Employee> list = new ArrayList<>();
-
-        // Read old records if file exists
         File file = new File(FILE_NAME);
 
         if (file.exists()) {
