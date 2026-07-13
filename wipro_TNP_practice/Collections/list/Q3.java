@@ -1,0 +1,29 @@
+package Collections.list;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Q3 {
+    public static void printAll(ArrayList<String> list) {
+
+        Iterator<String> itr = list.iterator();
+
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+
+    public static void main(String[] args) {
+
+        // ArrayList that stores only Strings
+        ArrayList<String> list = new ArrayList<>();
+
+        list.add("Java");
+        list.add("Python");
+        list.add("C");
+        list.add("C++");
+        list.add("SQL");
+
+        printAll(list);
+    }
+}
