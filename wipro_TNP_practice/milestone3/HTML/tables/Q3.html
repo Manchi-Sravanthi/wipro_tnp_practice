@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Registration Form</title>
+</head>
+
+<body>
+
+    <h2 align="center">Online Registration Form</h2>
+
+    <form>
+
+        <table align="center">
+
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="confirmPassword"></td>
+            </tr>
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea name="address" rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Profession:</td>
+                <td>
+                    <select name="profession">
+                        <option selected>Select one</option>
+                        <option>Student</option>
+                        <option>Engineer</option>
+                        <option>Teacher</option>
+                        <option>Doctor</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
